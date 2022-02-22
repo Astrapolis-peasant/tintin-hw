@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "hw1": {
+      "main": "src/hw1/main.mo",
+      "type": "motoko"
+    },
+    "hw1_assets": {
+      "dependencies": [
+        "hw1"
+      ],
+      "frontend": {
+        "entrypoint": "src/hw1_assets/src/index.html"
+      },
+      "source": [
+        "src/hw1_assets/assets",
+        "dist/hw1_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
