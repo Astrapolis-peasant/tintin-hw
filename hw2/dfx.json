@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "hw2": {
+      "main": "src/hw2/main.mo",
+      "type": "motoko"
+    },
+    "hw2_assets": {
+      "dependencies": [
+        "hw2"
+      ],
+      "frontend": {
+        "entrypoint": "src/hw2_assets/src/index.html"
+      },
+      "source": [
+        "src/hw2_assets/assets",
+        "dist/hw2_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
