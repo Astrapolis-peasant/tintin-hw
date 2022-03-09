@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.9.2",
+  "canisters": {
+    "hw4": {
+      "type": "motoko",
+      "main": "src/hw4/main.mo"
+    },
+    "hw4_assets": {
+      "type": "assets",
+      "source": [
+        "src/hw4_assets/assets"
+      ],
+      "dependencies": [
+        "hw4"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
