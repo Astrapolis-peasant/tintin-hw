@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Microblog</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Microblog</h1>
+        <h2 id="username"></h2>
+      </header>
+      <label for="message">What do you want me to post</label>
+      <textarea id="message"></textarea>
+      <input type="password" id="otp" placeholder="password">
+      <button id="post">Post</button>
+      <input type="text" id="principal_id" placeholder="principal_id">
+      <button id="follow">Follow</button>
+      &nbsp; <span id="error"></span>
+      <h3>follows</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>author</th>
+            <th>principal</th>
+          </tr>
+        </thead>
+        <tbody id="follows">
+        </tbody>
+      </table>
+      <h3>my posts</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>author</th>
+            <th>time</th>
+            <th>post</th>
+          </tr>
+        </thead>
+        <tbody id="posts">
+        </tbody>
+      </table>
+      <h3>timeline</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>author</th>
+            <th>time</th>
+            <th>post</th>
+          </tr>
+        </thead>
+        <tbody id="posts">
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "hw5": {
+      "main": "src/hw5/main.mo",
+      "type": "motoko"
+    },
+    "hw5_assets": {
+      "dependencies": [
+        "hw5"
+      ],
+      "frontend": {
+        "entrypoint": "src/hw5_assets/src/index.html"
+      },
+      "source": [
+        "src/hw5_assets/assets",
+        "dist/hw5_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.2",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
