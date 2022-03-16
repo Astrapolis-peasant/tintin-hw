@@ -16,17 +16,18 @@
       </header>
       <label for="message">What do you want me to post</label>
       <textarea id="message"></textarea>
-      <input type="password" id="otp" placeholder="password">
+      <input type="password" id="otp" placeholder="one time password">
       <button id="post">Post</button>
+      &nbsp; <span id="post_error"></span>
       <input type="text" id="principal_id" placeholder="principal_id">
       <button id="follow">Follow</button>
-      &nbsp; <span id="error"></span>
+      &nbsp; <span id="follow_error"></span>
       <h3>follows</h3>
       <table>
         <thead>
           <tr>
-            <th>author</th>
-            <th>principal</th>
+            <th>Name</th>
+            <th>principal id</th>
           </tr>
         </thead>
         <tbody id="follows">
@@ -53,7 +54,7 @@
             <th>post</th>
           </tr>
         </thead>
-        <tbody id="posts">
+        <tbody id="timeline">
         </tbody>
       </table>
     </main>
